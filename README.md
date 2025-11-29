@@ -30,3 +30,4 @@ flowchart TD
     F --> G[Consumo en BI<br/>Dashboard Power BI / Reportes]
 
 ::contentReference[oaicite:0]{index=0}
+```

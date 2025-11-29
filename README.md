@@ -19,7 +19,8 @@ flowchart LR
     E --> F[Resultados<br/>CSV clientes_segmentados]
     F --> G[Visualización<br/>Power BI / Dashboard]
     G --> H[Decisiones de negocio<br/>Estrategias de descuento<br/>(5%, 20%, 25%)]
-
+```
+```mermaid
 flowchart TD
     A[Excel (2 tablas)<br/>Detalle_cliente + Detalle_tx] 
         --> B[Preprocesamiento & Limpieza<br/>- Tipos de datos<br/>- Winsorizing de Valor<br/>- Join por Id_tx]
@@ -28,6 +29,6 @@ flowchart TD
     D --> E[Segmentación de Clientes<br/>25%: Bajo uso<br/>20%: Afín a avances<br/>5%: Alta afinidad<br/>Otros]
     E --> F[Salida Analítica<br/>CSV clientes_segmentados_con_rfm]
     F --> G[Consumo en BI<br/>Dashboard Power BI / Reportes]
-
-::contentReference[oaicite:0]{index=0}
 ```
+::contentReference[oaicite:0]{index=0}
+

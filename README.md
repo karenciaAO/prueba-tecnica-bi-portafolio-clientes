@@ -30,18 +30,17 @@ flowchart LR
 ```
 ```mermaid
 flowchart TD
-    A["Excel (2 tablas)\nDetalle_cliente + Detalle_tx"] 
-        --> B["Preprocesamiento y limpieza\nTipos de datos\nWinsorizing de Valor\nJoin por Id_tx"]
+A["Excel (2 tablas)\nDetalle_cliente + Detalle_tx"] 
+--> B["Preprocesamiento y limpieza\nTipos de datos\nWinsorizing de Valor\nJoin por Id_tx"]
 
-    B --> C["Features a nivel cliente\nR, F, M + mix compras / avances\nticket promedio"]
+B --> C["Features a nivel cliente\nR, F, M + mix compras / avances\nticket promedio"]
 
-    C --> D["RFM Scoring\nR = Recencia\nF = Frecuencia\nM = Monto\nScores 1-5 + RFM_sum"]
+C --> D["RFM Scoring\nR = Recencia\nF = Frecuencia\nM = Monto\nScores 1-5 + RFM_sum"]
 
-    D --> E["Segmentación de clientes\n25%: Bajo uso\n20%: Afín a avances\n5%: Alta afinidad\nOtros"]
+D --> E["Segmentación de clientes\n25%: Bajo uso\n20%: Afín a avances\n5%: Alta afinidad\nOtros"]
 
-    E --> F["Salida analítica\nCSV clientes_segmentados_con_rfm"]
+E --> F["Salida analítica\nCSV clientes_segmentados_con_rfm"]
 
-    F --> G["Consumo en BI\nDashboard Power BI / reportes"]
+F --> G["Consumo en BI\nDashboard Power BI / reportes"]
 ```
-::contentReference[oaicite:0]{index=0}
 

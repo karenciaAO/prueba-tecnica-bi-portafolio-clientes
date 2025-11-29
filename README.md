@@ -12,35 +12,34 @@ Este repositorio contiene el desarrollo de una prueba técnica para el rol de **
 ```mermaid
 flowchart LR
 
-    A["Fuente de datos\nExcel: Detalle_cliente + Detalle_tx"] 
-        --> B["Preprocesamiento\nLimpieza, tipos de datos,\njoin por Id_tx, winsorizing"]
+    A["Fuente de datos Excel: Detalle_cliente + Detalle_tx"] 
+        --> B["Preprocesamiento Limpieza, tipos de datos, join por Id_tx, winsorizing"]
 
-    B --> C["Feature Engineering\nIndicadores compras / avances\nR = Recencia\nF = Frecuencia\nM = Monto"]
+    B --> C["Feature Engineering Indicadores compras / avances R = Recencia F = Frecuencia M = Monto"]
 
-    C --> D["RFM Scoring\nScores 1-5\nRFM_sum"]
+    C --> D["RFM Scoring Scores 1-5 RFM_sum"]
 
-    D --> E["Segmentación de Clientes\nReglas de negocio + RFM"]
+    D --> E["Segmentación de Clientes Reglas de negocio + RFM"]
 
-    E --> F["Resultados\nCSV clientes_segmentados"]
+    E --> F["Resultados CSV clientes_segmentados"]
 
-    F --> G["Visualización\nPower BI / Dashboard"]
+    F --> G["Visualización Power BI / Dashboard"]
 
-    G --> H["Decisiones de negocio\nEstrategias de descuento\n5% - 20% - 25%"]
+    G --> H["Decisiones de negocio Estrategias de descuento 5% - 20% - 25%"]
 
 ```
 ```mermaid
 flowchart TD
-    A["Excel (2 tablas)\nDetalle_cliente + Detalle_tx"] --> B["Preprocesamiento y limpieza\nTipos de datos\nWinsorizing de Valor\nJoin por Id_tx"]
+    A["Excel (2 tablas) Detalle_cliente + Detalle_tx"] --> B["Preprocesamiento y limpieza Tipos de datos, Winsorizing de Valor, Join por Id_tx"]
 
-    B --> C["Features a nivel cliente\nR, F, M + mix compras / avances\nticket promedio"]
+    B --> C["Features a nivel cliente R, F, M + mix compras / avances ticket promedio"]
 
-    C --> D["RFM Scoring\nR = Recencia\nF = Frecuencia\nM = Monto\nScores 1-5 + RFM_sum"]
+    C --> D["RFM Scoring R = Recencia F = Frecuencia M = Monto Scores 1-5 + RFM_sum"]
 
-    D --> E["Segmentación de clientes\n25%: Bajo uso\n20%: Afín a avances\n5%: Alta afinidad\nOtros"]
+    D --> E["Segmentación de clientes 25%: Bajo uso 20%: Afín a avances 5%: Alta afinidad Otros"]
 
-    E --> F["Salida analítica\nCSV clientes_segmentados_con_rfm"]
+    E --> F["Salida analítica CSV clientes_segmentados_con_rfm"]
 
-    F --> G["Consumo en BI\nDashboard Power BI / reportes"]
-
-
+    F --> G["Consumo en BI Dashboard Power BI / reportes"]
+```
 

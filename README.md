@@ -8,21 +8,6 @@ Este repositorio contiene el desarrollo de una prueba técnica para el rol de **
 ---
 
 ## 📌 1. Arquitectura del Proceso Analítico
-
-```mermaid
-flowchart TD
-    A["Excel (2 tablas) Detalle_cliente + Detalle_tx"] --> B["Preprocesamiento y limpieza Tipos de datos, Winsorizing de Valor, Join por Id_tx"]
-
-    B --> C["Features a nivel cliente R, F, M + mix compras / avances ticket promedio"]
-
-    C --> D["RFM Scoring R = Recencia F = Frecuencia M = Monto Scores 1-5 + RFM_sum"]
-
-    D --> E["Segmentación de clientes 25%: Bajo uso 20%: Afín a avances 5%: Alta afinidad Otros + RFM"]
-
-    E --> F["Salida analítica CSV clientes_segmentados_con_rfm"]
-
-    F --> G["Consumo en BI Dashboard Power BI / reportes"]
-
-    G --> H["Decisiones de negocio Estrategias de descuento 5% - 20% - 25%"]
-```
-
+<p align="center">
+  <img src="/assets/Diagrama.png" alt="Arquitectura Analítica BI" width="800"/>
+</p>

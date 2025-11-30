@@ -9,5 +9,5 @@ Este repositorio contiene el desarrollo de una prueba técnica para el rol de **
 
 ## 📌 1. Arquitectura del Proceso Analítico
 <p align="center">
-  <img src="/assets/Diagrama.png" alt="Arquitectura Analítica BI" width="800"/>
+  <img src="/assets/Esquema.png" alt="Arquitectura Analítica BI" width="800"/>
 </p>

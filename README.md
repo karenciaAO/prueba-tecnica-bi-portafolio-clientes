@@ -11,17 +11,12 @@ Este repositorio contiene el desarrollo de una prueba técnica para el rol de **
 <p align="center">
   <img src="/assets/Esquema.png" alt="Arquitectura Analítica BI" width="800"/>
 </p>
-Segmentación por reglas de negocio
 
-Construí una segmentación estratégica basada en tres pilares:
+## Segmentación por reglas de negocio
 
-RFM
+Construí una segmentación estratégica basada en tres pilares: RFM y Mix de productos (proporción de compras vs avances)
 
-Mix de productos (proporción de compras vs avances)
-
-Recencia (actividad reciente)
-
-La segmentación final tiene 4 grupos:
+## 4 grupos:
 
 🟧 1. Bajo uso – Descuento 25%
 
